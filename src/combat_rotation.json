@@ -3,7 +3,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "World of Warcraft combat emulator rotation description",
   "type": "object",
-  "required": ["class", "spec", "expansion", "productId"],
+  "required": ["class", "spec", "gameLine", "subType"],
   "additionalProperties": false,
   "properties": {
     "productId": {
@@ -59,6 +59,13 @@
     "expansion": {
       "type": "string",
       "enum": ["Classic", "WotLK", "Dragonflight"]
+    },
+    "gameLine": {
+      "type": "string",
+      "enum": ["retail","classic","classic_sod","classic_era"]
+    },
+    "subType": {
+      "type": "string"
     },
     "config": {
       "type": "object",
