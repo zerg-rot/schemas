@@ -1264,6 +1264,13 @@
           "type": "string",
           "description": "Unique name of the step"
         },
+        "toggleGroups": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["aoe", "cooldown", "interrupter"]
+          }
+        },
         "description": {
           "type": "string",
           "description": "Detailed description for step"
@@ -1364,7 +1371,7 @@
             "isInterrupter": {
               "type": "boolean",
               "default": false,
-              "description": "This spell interrupts casts"
+              "description": "This spell interrupts casts. You should use it for every interrupt-like spell, so engine can place them in a queue to not use all interrupters to interrupt one spell."
             },
             "spread": {
               "type": "object",
