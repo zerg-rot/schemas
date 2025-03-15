@@ -1173,11 +1173,11 @@
             "name": {
               "type": "string",
               "deprecated": true,
-              "description": "Name of the spell"
+              "description": "Name of the spell. Deprecated, use comment instead."
             },
             "comment": {
               "type": "string",
-              "description": "optional description"
+              "description": "Optional details"
             },
             "spellId": {
               "$ref": "#/definitions/spellId"
